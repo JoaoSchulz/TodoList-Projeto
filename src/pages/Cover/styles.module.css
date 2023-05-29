@@ -27,7 +27,7 @@
     color: var(--blue-dark);
 }
 
-.image {
+.conteiner_Image {
     width: 100%;
     border-radius: 40px;
 
@@ -37,6 +37,6 @@
 
 }
 
-.image img {
+.image {
     width: 60%;
 }
