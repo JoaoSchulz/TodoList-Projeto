@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
+import App from './pages/ToDo/helpers/index.tsx'
 import './global.css'
 
 import {
@@ -16,6 +16,10 @@ const router = createBrowserRouter([
     element: <App />,
     errorElement: <NotFound />
   },
+  {
+    path: "/To-Do",
+    element: <Cover/>
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
