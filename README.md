@@ -20,7 +20,7 @@ A Tela de No-Task:
 A Tela de Task:
 ![Tela-Task-ToDoList](https://gist.githubusercontent.com/JoaoSchulz/69eb01b5d48ec1be0ce4665eb5291469/raw/89feaaa77be6b913177e795452e7e317391181a0/Todo.svg)
 
-# Intregantes
+# Intregante
 
 [João Guilherme Schulz](https://github.com/JoaoSchulz)
 
