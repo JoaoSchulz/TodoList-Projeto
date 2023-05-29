@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './pages/ToDo/helpers/index.tsx'
 import './global.css'
@@ -13,13 +13,30 @@ import { Cover } from './pages/Cover/index.tsx';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
-    errorElement: <NotFound />
+    element: (
+      <Suspense fallback={<div>Loading...</div>}>
+        <Cover />
+      </Suspense>
+    ),
+    errorElement: (
+      <Suspense fallback={<div>Loading...</div>}>
+        <NotFound />
+      </Suspense>
+    ),
   },
   {
     path: "/To-Do",
-    element: <Cover/>
-  }
+    element: (
+      <Suspense fallback={<div>Loading...</div>}>
+        <Cover />
+      </Suspense>
+    ),
+    errorElement: (
+      <Suspense fallback={<div>Loading...</div>}>
+        <NotFound />
+      </Suspense>
+    ),
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
