@@ -8,12 +8,17 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import NotFound from './components/NotFound/index.tsx';
+import { Cover } from './components/Cover/index.tsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
     errorElement: <NotFound />
+  },
+  {
+    path: "/Cover",
+    element: <Cover/>
   },
 ]);
 
