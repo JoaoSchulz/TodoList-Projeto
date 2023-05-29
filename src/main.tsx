@@ -16,10 +16,6 @@ const router = createBrowserRouter([
     element: <App />,
     errorElement: <NotFound />
   },
-  {
-    path: "/Cover",
-    element: <Cover/>
-  },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(

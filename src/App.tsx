@@ -1,5 +1,5 @@
-import { Content } from "./components/Content"
-import { Header } from "./components/Header"
+import { Content } from "./pages/ToDo/components/Content"
+import { Header } from "./pages/ToDo/components/Header"
 import { ToDoContextProvider } from "./contexts/ToDo"
 import { ToastProvider } from "./contexts/Toast"
 

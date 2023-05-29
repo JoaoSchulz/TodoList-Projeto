@@ -3,11 +3,11 @@ import Plus from '../../assets/plus.svg';
 import { NoContent } from '../NoContent';
 import { ChangeEvent, useEffect, useState } from 'react';
 import { TodoList } from '../TodoList';
-import { Task } from '../../models/Task';
+import { Task } from '../../../../models/Task';
 import { v4 as uuidv4 } from 'uuid';
-import { api } from '../../configs/api';
-import useToDoContext from '../../hooks/useToDoContext';
-import { useToast } from '../../hooks/useToast';
+import { api } from '../../../../configs/api';
+import useToDoContext from '../../../../hooks/useToDoContext';
+import { useToast } from '../../../../hooks/useToast';
 
 export const Content = () => {
     const [description, setDescription] = useState<string>("");
