@@ -73,6 +73,7 @@ export const Content = () => {
 
     useEffect(() => {
         api.get("tasks").then((response) => setTaskListState(response.data as Task[]));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     return (
