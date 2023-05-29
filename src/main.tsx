@@ -1,6 +1,5 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
 import './global.css'
 
 import {
@@ -8,12 +7,35 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import NotFound from './components/NotFound/index.tsx';
+import { Cover } from './pages/Cover/index.tsx';
+import ToDo from './pages/ToDo/index.tsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
-    errorElement: <NotFound />
+    element: (
+      <Suspense fallback={<div>Loading...</div>}>
+        <Cover />
+      </Suspense>
+    ),
+    errorElement: (
+      <Suspense fallback={<div>Loading...</div>}>
+        <NotFound />
+      </Suspense>
+    ),
+  },
+  {
+    path: "/To-Do",
+    element: (
+      <Suspense fallback={<div>Loading...</div>}>
+        <ToDo/>
+      </Suspense>
+    ),
+    errorElement: (
+      <Suspense fallback={<div>Loading...</div>}>
+        <NotFound />
+      </Suspense>
+    ),
   },
 ]);
 

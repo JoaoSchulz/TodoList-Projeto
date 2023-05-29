@@ -1,13 +1,13 @@
 import styles from './index.module.css';
-import Plus from '../../assets/plus.svg';
+import Plus from '../../../../assets/plus.svg';
 import { NoContent } from '../NoContent';
 import { ChangeEvent, useEffect, useState } from 'react';
 import { TodoList } from '../TodoList';
-import { Task } from '../../models/Task';
+import { Task } from '../../../../models/Task';
 import { v4 as uuidv4 } from 'uuid';
-import { api } from '../../configs/api';
-import useToDoContext from '../../hooks/useToDoContext';
-import { useToast } from '../../hooks/useToast';
+import { api } from '../../../../configs/api';
+import useToDoContext from '../../../../hooks/useToDoContext';
+import { useToast } from '../../../../hooks/useToast';
 
 export const Content = () => {
     const [description, setDescription] = useState<string>("");
@@ -73,12 +73,12 @@ export const Content = () => {
 
     useEffect(() => {
         api.get("tasks").then((response) => setTaskListState(response.data as Task[]));
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     return (
         <section className={styles.section_container}>
             <main>
-
                 <article className={styles.input_container}>
                     <input
                         className={styles.input}
@@ -96,7 +96,6 @@ export const Content = () => {
                             alt="Ícone de mais" />
                     </button>
                 </article>
-
                 <article className={styles.content_header}>
                     <article className={styles.tasks_container}>
                         <p className={styles.tasks_created}>Tarefas Criadas</p>
@@ -107,13 +106,10 @@ export const Content = () => {
                         <span className={styles.span_value}> {tasksDone.length} de {taskListState.length} </span>
                     </article>
                 </article>
-
                 {taskListState.length === 0 ? <NoContent /> : <TodoList
                     onDelete={removeTaskOnList}
                     onChangeCheckbox={changeStatusCheckbox}
                 />}
-
-
             </main>
         </section>
     )

@@ -1,6 +1,6 @@
-import Trash from '../../assets/trash.svg';
-import useToDoContext from '../../hooks/useToDoContext';
-import styles from './index.module.css';
+import Trash from '../../../../assets/trash.svg';
+import useToDoContext from '../../../../hooks/useToDoContext';
+import styles from './styles.module.css';
 
 interface TodoListProps {
     onDelete: (id: string) => void;

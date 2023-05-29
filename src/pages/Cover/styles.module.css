@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--blue-dark);
+}
+
+.text{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.text h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 120px;
+
+    color: #FFFFFF;
+
+    margin-left: 50px;
+}
+
+.text p{
+    color: var(--blue-dark);
+}
+
+.conteiner_Image {
+    width: 100%;
+    border-radius: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.image {
+    width: 60%;
+}

@@ -1,5 +1,5 @@
-import Clipboard from '../../assets/clipboard.svg';
-import styles from './index.module.css';
+import Clipboard from '../../../../assets/clipboard.svg';
+import styles from './styles.module.css';
 
 export const NoContent = () => {
     return (
