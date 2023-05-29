@@ -17,6 +17,7 @@ export type ToastContextProps = {
 
 const ToastContext = createContext<ToastContextProps>({
     isHidden: false,
+    // eslint-disable-next-line @typescript-eslint/no-empty-function
     showToast: () => { }
 } as ToastContextProps);
 
