@@ -6,8 +6,9 @@ export const Cover = () => {
         <section className={styles.container}>
              <article className={styles.text}>
                 <h1>ToDo List</h1>
+                <p>a</p>
              </article>
-             <article>
+             <article className={styles.image}>
                 <img src={capa} alt="" />
              </article>
         </section>
