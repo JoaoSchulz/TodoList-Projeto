@@ -1,4 +1,4 @@
-import Clipboard from '../../assets/clipboard.svg';
+import Clipboard from '../../../../assets/clipboard.svg';
 import styles from './styles.module.css';
 
 export const NoContent = () => {

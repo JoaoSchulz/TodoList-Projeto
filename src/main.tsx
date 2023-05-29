@@ -8,7 +8,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import NotFound from './components/NotFound/index.tsx';
-import { Cover } from './components/Cover/index.tsx';
+import { Cover } from './pages/Cover/index.tsx';
 
 const router = createBrowserRouter([
   {

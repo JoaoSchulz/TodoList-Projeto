@@ -1,5 +1,5 @@
 import styles from './index.module.css';
-import Plus from '../../assets/plus.svg';
+import Plus from '../../../../assets/plus.svg';
 import { NoContent } from '../NoContent';
 import { ChangeEvent, useEffect, useState } from 'react';
 import { TodoList } from '../TodoList';

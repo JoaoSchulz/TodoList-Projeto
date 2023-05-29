@@ -1,4 +1,4 @@
-import Trash from '../../assets/trash.svg';
+import Trash from '../../../../assets/trash.svg';
 import useToDoContext from '../../../../hooks/useToDoContext';
 import styles from './styles.module.css';
 
