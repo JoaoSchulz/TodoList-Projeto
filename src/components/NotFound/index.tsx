@@ -1,5 +1,5 @@
 import { Link, useRouteError } from "react-router-dom";
-import styles from './index.module.css';
+import styles from './styles.module.css';
 
 type ErrorResponse = {
     data: any;
