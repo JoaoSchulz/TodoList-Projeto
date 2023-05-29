@@ -7,6 +7,10 @@ Atividade avaliativa referente ao terceiro projeto do 4 semestre de Engenharia d
 O Objetivo dessa atividade é criar uma tela de lista de tarefas, onde nela, vc pode criar e apagar tasks, e mostrar quantas tarefas você fez.
 Alem de mostrar uma tela(No-Task), caso você não tenha nenhuma task.
 
+para Visualizar o projeto, acesse o link abaixo:
+
+https://main--joaoschulz-todo-list.netlify.app
+
 # Telas
 
 A aplicação deve ser composta por pelo menos três telas, conforme as imagens abaixo: 
